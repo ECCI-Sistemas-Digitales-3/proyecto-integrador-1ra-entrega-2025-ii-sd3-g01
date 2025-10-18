@@ -58,3 +58,12 @@ El sistema automatiza el inicio y la detención de la bomba según señales envi
 <p align="center">
   <img src="./Control.jpeg" alt="Logo" width="800"/>
 </p>
+
+<p align="center">
+  <img src="./Apagada.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Encendida.jpeg" alt="Logo" width="800"/>
+</p>
+
