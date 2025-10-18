@@ -3,11 +3,26 @@
 
 ## Integrantes
 
-
+- [Michael Handrety Fonseca Arana](https://github.com/MichaelJF50)
+- [Laura Daniela Rincón Pinilla](https://github.com/Laura03rincon)
 
 ## Arquitectura propuesta
 
+<p align="center">
+  <img src="./Codigo.jpeg" alt="Logo" width="800"/>
+</p>
 
+<p align="center">
+  <img src="./Wifi.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Node red.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Control.jpeg" alt="Logo" width="800"/>
+</p>
 
 ## Periférico a trabajar
 
