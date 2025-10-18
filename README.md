@@ -26,6 +26,15 @@
 
 ## Periférico a trabajar
 
+[![Ver video en YouTube](https://img.youtube.com/vi/rzbVd6A8gA8/hqdefault.jpg)](https://youtube.com/shorts/rzbVd6A8gA8)
+
+<p align="center">
+  <img src="./Fuente.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Bomba.jpeg" alt="Logo" width="800"/>
+</p>
 
 ## Avances
 
