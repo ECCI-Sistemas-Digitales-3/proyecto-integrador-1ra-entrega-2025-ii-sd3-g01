@@ -8,21 +8,24 @@
 
 ## Arquitectura propuesta
 
-<p align="center">
-  <img src="./Codigo.jpeg" alt="Logo" width="800"/>
-</p>
+Este proyecto permite controlar una bomba peristáltica mediante comunicación MQTT utilizando un ESP32.
+El sistema automatiza el inicio y la detención de la bomba según señales enviadas por otros dispositivos en el proceso de mezclado (usuario y galga).
+
+## ⚙️ Funcionamiento General
+
+### 🟢 Inicio del proceso
+- El **usuario selecciona el color** que desea dosificar.  
+- Se envía un **mensaje MQTT** con el tema `bomba/inicio` y el valor `ON`.  
+- El **ESP32 enciende la bomba** (salida en el pin **GPIO 32**).
+
+### 🔴 Finalización del proceso
+- Cuando la **galga detecta que se alcanzó el peso indicado**, envía un **mensaje MQTT** con el tema `bomba/final` y el valor `ON`.  
+- El **ESP32 apaga la bomba** y publica el estado `APAGADA` en el tema `bomba/estado`.
 
 <p align="center">
-  <img src="./Wifi.jpeg" alt="Logo" width="800"/>
+  <img src="./Digitales III.png" alt="Logo" width="800"/>
 </p>
 
-<p align="center">
-  <img src="./Node red.jpeg" alt="Logo" width="800"/>
-</p>
-
-<p align="center">
-  <img src="./Control.jpeg" alt="Logo" width="800"/>
-</p>
 
 ## Periférico a trabajar
 
@@ -39,3 +42,19 @@
 ## Avances
 
 <!-- Subir en una carpeta src los códigos que tienen hasta el momento y esta sección agregar lo que consideren necesario referente a sus avances. -->
+
+<p align="center">
+  <img src="./Codigo.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Wifi.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Node red.jpeg" alt="Logo" width="800"/>
+</p>
+
+<p align="center">
+  <img src="./Control.jpeg" alt="Logo" width="800"/>
+</p>
