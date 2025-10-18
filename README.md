@@ -14,13 +14,13 @@ El sistema automatiza el inicio y la detención de la bomba según señales envi
 ## ⚙️ Funcionamiento General
 
 ### 🟢 Inicio del proceso
-- El **usuario selecciona el color** que desea dosificar.  
-- Se envía un **mensaje MQTT** con el tema `bomba/inicio` y el valor `ON`.  
-- El **ESP32 enciende la bomba** (salida en el pin **GPIO 32**).
+- El **usuario selecciona el color de pintura** que desea dosificar.  
+- Se envía un **mensaje MQTT** con el tema `bomba/control` y el valor `ON`.  
+- El **ESP32 enciende la bomba peristáltica** (salida en el pin **GPIO 32**) y el **LED indicador** (pin **GPIO 2**).  
 
 ### 🔴 Finalización del proceso
-- Cuando la **galga detecta que se alcanzó el peso indicado**, envía un **mensaje MQTT** con el tema `bomba/final` y el valor `ON`.  
-- El **ESP32 apaga la bomba** y publica el estado `APAGADA` en el tema `bomba/estado`.
+- Cuando la **galga detecta que se alcanzó el peso indicado**, envía un **mensaje MQTT** con el tema `bomba/control` y el valor `OFF`.  
+- El **ESP32 apaga la bomba** y publica el estado `APAGADA` en el tema `bomba/estado`.  
 
 <p align="center">
   <img src="./Digitales III.png" alt="Logo" width="800"/>
